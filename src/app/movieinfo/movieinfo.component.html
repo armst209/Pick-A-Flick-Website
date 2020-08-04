@@ -1,0 +1,12 @@
+<div id="movie-info-container">
+    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+        <img [src]="movie.poster_path" alt="movie_poster">
+    </div>
+    <div
+        style="display: flex; flex-direction: column; background-color: whitesmoke ; border-radius:10px;  box-shadow: 5px 5px 8px gray; padding: 20px; ">
+        <p style="font-size: 30px; text-decoration: underline red;">{{movie.title}}</p>
+        <p>Popularity: {{movie.popularity}}</p>
+        <p>Overview:</p>
+        <p>{{movie.overview}}</p>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+
+
+html,
+body {
+  margin:0;
+  padding:0;
+  background-color: #e4e3e3; 
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+
+#movie-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px;
+ 
+
+}
+
+.movie-card-buttons {
+  border-radius: 25px;
+  border: none;
+  padding: 0 10px;
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: 5px 5px 5px grey;
+  height: 40px;
+  width: 100px;
+  margin: 10px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.movie-card-buttons:hover {
+  border: 2px black solid;
+  text-decoration: underline green;
+  color: whitesmoke;
+  background-color: black;
+  box-shadow: none;
+}
+
+#movie-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  opacity: 0.6;
+  transition: 0.3s;
+  font-size: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  align-items: center;
+  width:375px;
+  height: 335px;
+
+}
+
+#movie-card:hover {
+
+  height: 350px;
+  width: 400px;
+  border: 4px solid greenyellow;
+  opacity: 1;
+}
+
+#movie-img {
+  /* display: flex; */
+  border-radius: 10px;
+  width: 350px;
+  height: 181px;
+  box-shadow: 5px 10px 8px #888888;
+  margin-bottom: 10px;
+}
+
+#buttons-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
