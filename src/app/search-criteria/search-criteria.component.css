@@ -1,0 +1,199 @@
+.search-container {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  background: white
+    url(https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  width: auto;
+}
+
+.search-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 3px;
+  padding: 0;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 10px;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.label {
+  font-size: 17px;
+}
+
+.input {
+  border: 2px solid whitesmoke;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 25px;
+  padding: 3px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px black;
+  height: 35px;
+  font-family: "Rubik", sans-serif;
+  background: none;
+  font-size: 15px;
+  box-shadow: 5px 5px 8px black;
+}
+
+.genre-dropdown {
+  height: 35px;
+  border-radius: 20px;
+  width: 350px;
+  margin-bottom: 10px;
+  border: 2px whitesmoke solid;
+  box-shadow: 5px 5px 8px black;
+  font-family: "Rubik", sans-serif;
+  background-color: none;
+  background: none;
+}
+
+.button {
+  background-color: none;
+  color: whitesmoke;
+  margin-bottom: 10px;
+  padding: 2px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  text-shadow: 2px 2px 5px black;
+  border: whitesmoke 2px solid;
+  background: none;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 8px black;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: none;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.button:hover span {
+  display: none;
+}
+
+.button:hover:before {
+  content: "SEARCH >";
+}
+.button:active {
+  background-color: white;
+  color: black;
+  font-size: 30px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 8px;
+}
+
+.dropbtn {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  text-shadow: 2px 2px 5px black;
+
+  border: whitesmoke 2px solid;
+  background-color: none;
+  background: none;
+  color: whitesmoke;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 8px black;
+  transition: 0.3s;
+}
+.dropbtn:hover {
+  box-shadow: none;
+  background-color: black;
+  cursor: pointer;
+}
+.dropbtn:hover span {
+  display: none;
+}
+
+.dropbtn:hover:before {
+  content: "NAVIGATION >";
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #f1f1f1;
+  height: auto;
+  width: auto;
+  border-bottom: 5px solid red;
+  font-size: 20px;
+  box-shadow: 0 5px 8px black;
+  margin-bottom: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.navbar a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  text-shadow: 3px 3px 5px black;
+  text-decoration: underline red;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  transition: 0.3s;
+}
+.navbar a:active {
+  background-color: white;
+  color: black;
+}
+
+.dropdown:hover .navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+::placeholder {
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px black;
+  font-family: "Rubik", sans-serif;
+}
+
+select {
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px black;
+  font-size: 15px;
+  height: 35px;
+  text-transform: uppercase;
+  text-align-last: center;
+}
