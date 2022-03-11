@@ -14,14 +14,12 @@ body {
 
 .movie-list-container {
   display: flex;
-
+  cursor: pointer;
   justify-content: center;
-
   flex-wrap: wrap;
   text-align: center;
   box-sizing: border-box;
   margin: 0;
-
   margin: 10px;
 }
 

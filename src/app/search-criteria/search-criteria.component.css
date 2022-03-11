@@ -2,7 +2,6 @@
   display: grid;
   flex-direction: column;
   align-items: center;
-
   justify-content: center;
   background: white
     url(https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
@@ -11,7 +10,6 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   width: auto;
 }
 
@@ -143,17 +141,25 @@
 }
 
 .navbar {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   background-color: #f1f1f1;
   height: auto;
-  width: auto;
   border-bottom: 5px solid red;
   font-size: 20px;
   box-shadow: 0 5px 8px black;
   margin-bottom: 20px;
   border-radius: 0 0 5px 5px;
+  transition: position 0.2s ease;
+}
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  transition: position 0.2s ease;
 }
 
 .navbar a {

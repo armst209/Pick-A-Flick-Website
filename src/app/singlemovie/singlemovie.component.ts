@@ -4,24 +4,21 @@ import { MovieappService } from '../movieapp.service';
 @Component({
   selector: 'app-singlemovie',
   templateUrl: './singlemovie.component.html',
-  styleUrls: ['./singlemovie.component.css']
+  styleUrls: ['./singlemovie.component.css'],
 })
 export class SinglemovieComponent implements OnInit {
-  @Input() movie : any;
+  @Input() movie: any;
 
-  constructor(private movieAppService : MovieappService) { }
+  constructor(private movieAppService: MovieappService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-
-  addToFavorites(movie:any){
+  addToFavorites(movie: any) {
     this.movieAppService.favoriteMovies.push(movie);
     console.log(this.movieAppService.favoriteMovies);
   }
-  
-  isMovieInFavorites() {
 
-    return !this.movieAppService.favoriteMovies.includes(this.movie)
+  isMovieInFavorites() {
+    return !this.movieAppService.favoriteMovies.includes(this.movie);
   }
 }

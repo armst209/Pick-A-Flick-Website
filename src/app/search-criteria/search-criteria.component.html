@@ -1,34 +1,60 @@
-<div class="search-container">
-  <h1 [routerLink]="['/home']" style="font-family: 'Mulish', sans-serif; cursor: pointer;" class="title">PICK A FLICK
+<nav class="search-container">
+  <h1
+    [routerLink]="['/home']"
+    style="font-family: 'Mulish', sans-serif; cursor: pointer"
+    class="title"
+  >
+    PICK A FLICK
   </h1>
   <form (submit)="searchSubmit(searchForm.value)" #searchForm="ngForm">
     <div class="search-items">
-      <select style="cursor: pointer;" for="select-input" class="genre-dropdown" type="text" id="genreId" name="genreId"
-        placeholder="Select A Genre" ngModel>
-        <option style="color:black;" selected value="">SEARCH BY GENRE</option>
-        <option style="color: black; text-align: center; text-transform: uppercase;" [value]="genre.id"
-          *ngFor="let genre of genres">{{
-              genre.name
-            }}</option>
+      <select
+        style="cursor: pointer"
+        for="select-input"
+        class="genre-dropdown"
+        type="text"
+        id="genreId"
+        name="genreId"
+        placeholder="Select A Genre"
+        ngModel
+      >
+        <option style="color: black" selected value="">SEARCH BY GENRE</option>
+        <option
+          style="color: black; text-align: center; text-transform: uppercase"
+          [value]="genre.id"
+          *ngFor="let genre of genres"
+        >
+          {{ genre.name }}
+        </option>
       </select>
       <label for="releaseYear" class="label"></label>
-      <input type="text" class="input" id="releaseYear" name="releaseYear" placeholder="SEARCH BY RELEASE YEAR"
-        ngModel />
+      <input
+        type="text"
+        class="input"
+        id="releaseYear"
+        name="releaseYear"
+        placeholder="SEARCH BY RELEASE YEAR"
+        ngModel
+      />
 
       <label for="actorName" class="label"></label>
-      <input type="text" class="input" id="actorName" name="actorName" placeholder="SEARCH BY ACTOR" ngModel />
-    
+      <input
+        type="text"
+        class="input"
+        id="actorName"
+        name="actorName"
+        placeholder="SEARCH BY ACTOR"
+        ngModel
+      />
+
       <div class="button-div">
         <button class="label button"><span>SEARCH</span></button>
       </div>
     </div>
   </form>
+</nav>
 
-
-
-</div>
-
-<nav class="navbar">
+<nav id="navbar-fixed" class="navbar">
   <a [routerLink]="['/home']">Home</a>
   <a [routerLink]="['/favorites']">Favorites</a>
   <a [routerLink]="['/about']">About Us</a>

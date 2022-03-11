@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { MovieinfoComponent } from './movieinfo/movieinfo.component';
 import { AboutComponent } from './about/about.component';
 import { SinglemovieComponent } from './singlemovie/singlemovie.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { SinglemovieComponent } from './singlemovie/singlemovie.component';
     MovieinfoComponent,
     AboutComponent,
     SinglemovieComponent,
+    NavbarComponent,
   
   ],
   imports: [
