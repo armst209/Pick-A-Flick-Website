@@ -15,7 +15,7 @@ export class SinglemovieComponent implements OnInit {
 
   addToFavorites(movie: any) {
     this.movieAppService.favoriteMovies.push(movie);
-    console.log(this.movieAppService.favoriteMovies);
+    // console.log(this.movieAppService.favoriteMovies);
   }
 
   isMovieInFavorites() {
